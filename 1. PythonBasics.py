@@ -37,7 +37,11 @@ print((20 - 3) + 2 ** 2)    # 21
 # bin(), int() functions & Complex Numbers (complex): (https://www.geeksforgeeks.org/python-int-function/)
 
 print(bin(5))       # 0b101 (Binary Representation)
+print(oct(37))      # 0o45  (Octal Represenatation)
+print(hex(69))      # 0x45  (Hexa Decimal Representation)
 print(int('0b101', 2))      # 5
+print(int('0o45', 8))       # 37
+print(int('0x45', 16))      # 69
 print(3+4j)     # (3+4j)
 
 #-------------------------------
@@ -108,3 +112,17 @@ print(weather)      # It's a "kind of" sunny
 greetings = "Hey!\tIt\'s a \"kind of\" sunny \n hope you have a good day."
 print(greetings)        # Hey!    It's a "kind of" sunny
                         # hope you have a good day
+
+#-------------------------------------------------------------------------
+# Formatted Strings:
+
+name = 'Shabd Kumar'
+age = 28
+
+print("Hi! " + name + ". You are " + str(age) + " years old.")                      # Hi! Shabd Kumar. You are 28 years old.
+print(f"Hi! {name}. You are {age} years old.")                                      # Hi! Shabd Kumar. You are 28 years old. (Python-3)
+print("Hi! {}. You are {} years old.".format('Kumar Akash', '25'))                  # Hi! Kumar Akash. You are 25 years old. (Python-2)
+print("Hi! {}. You are {} years old.".format(name, age))                            # Hi! Shabd Kumar. You are 28 years old.
+print("Hi! {1}. You are {2} years old.".format(name, age, "bye"))                   # Hi! 28. You are bye years old.
+print("Hi! {name}. You are {age} years old.".format(name='Ganpat Gandhi', age=38))  # Hi! Ganpat Gandhi. You are 38 years old.
+print("Hi! {0}. You are {age} years old.".format(name, age=30))                     # Hi! Shabd Kumar. You are 30 years old.
