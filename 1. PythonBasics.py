@@ -122,7 +122,35 @@ age = 28
 print("Hi! " + name + ". You are " + str(age) + " years old.")                      # Hi! Shabd Kumar. You are 28 years old.
 print(f"Hi! {name}. You are {age} years old.")                                      # Hi! Shabd Kumar. You are 28 years old. (Python-3)
 print("Hi! {}. You are {} years old.".format('Kumar Akash', '25'))                  # Hi! Kumar Akash. You are 25 years old. (Python-2)
+print("Hi! {}. You are {} years old.".format('Kumar Akash', '25', '123'))           # Hi! Kumar Akash. You are 25 years old.
 print("Hi! {}. You are {} years old.".format(name, age))                            # Hi! Shabd Kumar. You are 28 years old.
 print("Hi! {1}. You are {2} years old.".format(name, age, "bye"))                   # Hi! 28. You are bye years old.
 print("Hi! {name}. You are {age} years old.".format(name='Ganpat Gandhi', age=38))  # Hi! Ganpat Gandhi. You are 38 years old.
 print("Hi! {0}. You are {age} years old.".format(name, age=30))                     # Hi! Shabd Kumar. You are 30 years old.
+
+#----------------------------------------------------------------------------------------------------------------------------------------
+# String Indexes: (Slicing)
+
+selfish = 'me me me'
+print(selfish[0])           # m
+print(selfish[7])           # e
+print(selfish)              # me me me
+
+index = '0123456789'
+# [start:stop:stepover]
+print(index[0:2])           # 01
+print(index[0:9])           # 012345678
+print(index[0:10])          # 0123456789
+print(index[0:10:1])        # 0123456789
+print(index[0:10:2])        # 02468
+print(index[1:])            # 123456789
+print(index[:7])            # 0123456
+print(index[::1])           # 0123456789
+print(index[-1])            # 9
+print(index[-2])            # 8
+print(index[::-1])          # 9876543210
+print(index[::-2])          # 97531
+
+#-----------------------------------------
+# Immutability:
+
